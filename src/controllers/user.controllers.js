@@ -1,6 +1,6 @@
 const catchError = require('../utils/catchError');
 const User = require('../models/User');
-const { sendEmail } = require('../utils/sendemail');
+const { sendEmail } = require('../utils/sendEmail');
 const bcrypt =  require('bcrypt');
 const EmailCode = require('../models/EmailCode');
 const jwt = require("jsonwebtoken")
