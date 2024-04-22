@@ -87,7 +87,7 @@ const login = catchError(async (req, res) => {
   const token = jwt.sign(
     { user },
     process.env.TOKEN_SECRET,
-    { expiresIn: "1d" }
+    { expiresIn: "100d" }
   )
   //return
   return res.json({ user, token })
